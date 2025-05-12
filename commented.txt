@@ -38,3 +38,24 @@ Eg : class ExampleComponent extends component{
 
 How to call ?
 <ExampleComponent/>
+
+                                                      props
+
+React is a component based library which divides the UI into litle reusable pieces. In som cases , those  components need to communicate and the way to pass data between components is by using props.
+
+Props is a special keyword in React, which stand for properties and used for passing data from one componentto another.
+
+Props are being passed in a unidirectional flow.
+
+props data is read only,hich means that data coming from the parent should not be changed by child component.
+
+class ParentComponenet extends component{
+    render(){
+        return(
+            <h1>
+            I'am the Parent Component.
+            <childComponent/>
+            </h1>
+        )
+    }
+}
