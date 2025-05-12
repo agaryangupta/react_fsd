@@ -1,0 +1,40 @@
+React is the most popular javascript library.
+Used by netflix and Instagram.
+React is a library,not a framework.
+React uses the React virtual DOM.
+React firs creates the exact copy of the DOM.
+Then figure out hich part is new and only updates that specific part in virtual DOM.
+Finally, React copies the only new parts of virtual DOM.
+
+JSX will be translated into normal javascript bu Babel.
+
+Some Important rules of JSX.
+1. We can't return moer than one HTML once.
+2. We can use JSX inside for loop,if-else,cases.
+3. HTML attribute names like "class" becomes "className".
+4. HTML tags must alwas be closed.
+
+React has two types of components :
+1.Functional : These are stateless component and return react component.
+Eg : function Welcome(props){
+        return <h1>Welcome{props.name}</h1>
+}
+Eg : function Example(){
+    return(<h1>I'am a functional component</h1>)
+}
+
+Eg : const Example = ()=>{
+    return(<h1>I'am a functional componen</h1>)
+}
+
+2.Class : They are more complex than functional components including constructors.
+Eg : class ExampleComponent extends component{
+        render(){
+                return(
+                        <h1>I'am a functional componen</h1>
+                );
+        }
+}
+
+How to call ?
+<ExampleComponent/>
